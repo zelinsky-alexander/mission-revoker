@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mission-revoker"
+version = "0.1.0"
+description = "Revocation assurance and downstream-effect reconciliation for agent workflows"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [{ name = "MissionRevoker contributors" }]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.scripts]
+mission-revoker = "mission_revoker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mission_revoker = ["py.typed"]
