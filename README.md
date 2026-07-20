@@ -64,10 +64,10 @@ python -m unittest discover -s tests -v
 ```text
 Mission: mission-demo
 Revoked at: 2026-07-20T10:00:00+00:00
-Known descendants: 4
-Post-revocation attempts: 1
+Actions: 3
+Post-revocation attempts: 2
 Post-revocation observed effects: 1
-Evidence gaps: 1
+Evidence gaps: 2
 Overall: UNTRUSTED
 ```
 
@@ -98,7 +98,7 @@ tests/
   test_reconciliation.py
   test_revocation.py
 docs/
-  EXPERIMENT_PLAN.md
+  EXPERIMENT_PLAN.md  Condensed local test sequence
 ```
 
 ## Status and limitations
